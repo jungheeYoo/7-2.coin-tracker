@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [loding, setLoading] = useState(true);
+  // 기본 값인 빈 array를 두어서 undefined 되지 않도록 해줌
   const [coins, setCoins] = useState([]);
   useEffect(() => {
     fetch('https://api.coinpaprika.com/v1/tickers')
